@@ -1,5 +1,9 @@
 cmake_install.cmake
 CMakeCache.txt
 Makefile
-CMakeFiles
+
+/CMakeFiles
+/release
+/debug
+
 one

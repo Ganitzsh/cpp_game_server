@@ -1,13 +1,17 @@
 #include "Server.hpp"
 
 Server::Server() {
-
+  this->threadPool = new ThreadPool(10);
 }
 
 Server::~Server() {
   // this->threadPool->shutdown();
-  delete(this->socket);
-  delete(this->threadPool);
+  if (this->socket != NULL) {
+    delete(this->socket);
+  }
+  if (this->threadPool != NULL) {
+    delete(this->threadPool);
+  }
 }
 
 short Server::getPort() const {

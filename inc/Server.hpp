@@ -11,8 +11,8 @@ private:
   short port;
   std::string ip;
 
-  SocketUDP* socket;
-  ThreadPool* threadPool;
+  SocketUDP* socket = NULL;
+  ThreadPool* threadPool = NULL;
 
 public:
   Server();

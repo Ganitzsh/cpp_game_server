@@ -7,7 +7,7 @@ int main() {
   Server srv;
 
   try {
-    srv.start();
+    // srv.start();
   } catch (std::exception e) {
     std::cerr << "An error occured on the server: " << e.what() << std::endl;
   }

@@ -2,6 +2,11 @@ cmake_minimum_required(VERSION 2.6)
 project(one_app)
 set(CMAKE_CXX_STANDARD 17)
 
+set(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} -g -Wall")
+set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} -Wall")
+
+set(CMAKE_CXX_FLAGS "-g -Wall")
+
 find_package(Protobuf REQUIRED)
 message("   --> PROTOBUF LIB: ${PROTOBUF_LIBRARIES}")
 message("   --> PROTOBUF INCLUDE: ${PROTOBUF_INCLUDE_DIRS}")
