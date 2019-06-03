@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+package cmd;
+
+message NewPlayerReq {
+  required string name = 1;
+}
+
+message NewPlayerResp {
+  required string id = 1;
+}
